@@ -1,0 +1,42 @@
+.car-detail-section {
+    .detail-main {
+        display: flex;
+        flex-wrap: nowrap;
+        .car-detail-left {
+            max-width: 400px;
+            width: 100%;
+            padding-right: 40px;
+
+            .detail-heading-container {
+                max-width: max-content;
+                margin-left: auto;
+                h3 {
+                    font-size: 32px;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    white-space: normal;
+                }
+                h2{
+                    font-size: 42px;
+                    font-weight: 500;
+                    color: black;
+                }
+            }
+        }
+        .car-detail-right{
+            width: calc(100% - 400px);
+            .detail-paragraph{
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+            .detail-right-heading{
+                font-size: 20px;
+                font-weight: 500;
+                margin: 15px 0px;
+                line-height: 20px;
+            }
+        }
+    }
+}

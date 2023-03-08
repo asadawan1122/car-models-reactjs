@@ -1,0 +1,60 @@
+.section-padding{
+    padding: 50px 0px;
+}
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #e5e5e5;
+    .card-list-item {
+        flex-basis: 50%;
+        flex-grow: 0;
+        max-width: calc(50% - 62px) !important;
+        list-style-type: none;
+        margin: none;
+        border: solid #e5e5e5;
+        border-width: 1px;
+        padding: 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+            border: none !important;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background: white;
+        }
+    }
+}
+.car-list-heading-container{
+    max-width: max-content;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 60%;
+        left: 5px;
+        bottom: -5px;
+        height: 2px;
+        background: #e5e5e5;
+    }
+}
+.car-list-heading{
+    font-size: 32px;
+    font-weight: 600;
+}
+.car-list-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .select-container{
+        width: 200px;
+        .car-list-select{
+            width: 100%;
+            padding: 10px 0px;
+            border: none;
+            box-shadow: none;
+            outline: none;
+            border-bottom: 1px solid #e5e5e5 !important;
+        }
+    }
+}

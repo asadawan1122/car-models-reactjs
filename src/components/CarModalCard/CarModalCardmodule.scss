@@ -1,0 +1,53 @@
+.card-block{
+    a{
+        text-decoration: none !important;
+    }
+    height: 100%;
+    width: 100%;
+    .card-image-container{
+        height: 180px;
+        width: 60%;
+        max-width: 100%;
+        margin: 0 auto;
+        .car-image{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    .card-content-list{
+        margin-top: 30px;
+        .card-content-item{
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            .card-item-block{
+                max-width: 50%;
+                width: 100%;
+                padding: 0px 15px;
+                .card-sm-title{
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: black;
+                }
+                .card-description{
+                    font-size: 15px;
+                    line-height: 20PX;
+                    font-weight: 400;
+                    color: black;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+.discription-block{
+    max-width: 100% !important;
+    p{
+        text-align: justify;
+    }
+}
